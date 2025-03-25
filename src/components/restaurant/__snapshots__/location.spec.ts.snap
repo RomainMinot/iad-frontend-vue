@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`restaurant-card > no props 1`] = `
+"<div class=\\"flex gap-2\\"><i class=\\"mdi-map-marker mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
+  <div class=\\"text-slate-600\\"><pre class=\\"my-0\\"></pre>
+  </div>
+</div>"
+`;
+
+exports[`restaurant-card > renders correctly a location 1`] = `
+"<div class=\\"flex gap-2\\"><i class=\\"mdi-map-marker mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
+  <div class=\\"text-slate-600\\"><pre class=\\"my-0\\">Jungfernstieg 16 - 20
+4. OG
+20354 Hamburg
+Germany</pre>
+  </div>
+</div>"
+`;

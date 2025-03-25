@@ -1,0 +1,13 @@
+# Logs
+pnpm-debug.log*
+
+# Node
+node_modules
+
+# Editor directories and files
+.DS_Store
+
+# test/build files
+**/coverage/
+dist
+.vite

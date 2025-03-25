@@ -1,0 +1,15 @@
+{
+  "cSpell.words": [
+    "composables",
+    "tanstack",
+    "Unocss",
+    "unplugin",
+    "vuetify"
+  ],
+  "editor.formatOnSave": false,
+  "prettier.enable": false,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
