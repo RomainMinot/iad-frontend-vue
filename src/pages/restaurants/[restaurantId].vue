@@ -24,11 +24,7 @@ const { data: restaurant, isError } = useFetchRestaurant({ restaurantId: params.
         <VCardTitle class="!text-4xl text-white">
           {{ restaurant.name }}
         </VCardTitle>
-        <VAlert variant="flat" type="warning" class="mx-4 inline-block">
-          TODO: display the mean rating
-          <br>
-          Vuetify has a component for this. Use this one
-        </VAlert>
+        <RestaurantAverageRating :reviews="restaurant.reviews" />
       </VImg>
       <VCardText>
         <div class="grid grid-cols-2 gap-4">

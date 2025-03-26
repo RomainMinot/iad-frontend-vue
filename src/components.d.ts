@@ -10,6 +10,7 @@ declare module 'vue' {
     KeyValue: typeof import('./components/key-value.vue')['default']
     LoadingError: typeof import('./components/loading-error.vue')['default']
     RatingFilter: typeof import('./components/rating-filter.vue')['default']
+    RestaurantAverageRating: typeof import('./components/restaurant/average-rating.vue')['default']
     RestaurantCard: typeof import('./components/restaurant/card.vue')['default']
     RestaurantLocation: typeof import('./components/restaurant/location.vue')['default']
     RestaurantReview: typeof import('./components/restaurant/review.vue')['default']

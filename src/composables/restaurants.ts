@@ -51,3 +51,10 @@ export function useFormattedAddress(location: Location | undefined): string {
   const { formatted_address } = location;
   return formatted_address ?? returnDefaultMessage;
 }
+
+export function useAverageRating(reviews: Review[] | undefined): number {
+  if (!reviews || reviews.length === 0) return 0;
+  const totalRating = reviews.reduce((sum, review) => sum + review.rating, 0);
+  const averageRating = totalRating / reviews.length;
+  return Math.round(averageRating * 2) / 2;
+}
