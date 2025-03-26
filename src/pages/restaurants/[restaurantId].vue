@@ -35,10 +35,7 @@ const { data: restaurant, isError } = useFetchRestaurant({ restaurantId: params.
           <RestaurantLocation :location="restaurant.location" />
           <KeyValue icon="mdi-phone">
             <p class="text-body-1">
-              {{ restaurant.phone }}
-              <VAlert type="warning">
-                ↑ TODO: we would like to display the formatted phone
-              </VAlert>
+              {{ restaurant.display_phone }}
             </p>
           </KeyValue>
         </div>
