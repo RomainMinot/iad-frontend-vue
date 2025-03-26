@@ -1,5 +1,103 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`page-restaurant > displays the list of restaurants 1`] = `
+"<div class=\\"grid grid-cols-[minmax(0,_1fr)_16rem] gap-6\\">
+  <div class=\\"v-card v-theme--light v-card--density-default v-card--variant-elevated\\">
+    <!---->
+    <div class=\\"v-card__loader\\">
+      <div class=\\"v-progress-linear v-theme--light v-locale--is-ltr\\" style=\\"top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);\\" role=\\"progressbar\\" aria-hidden=\\"true\\" aria-valuemin=\\"0\\" aria-valuemax=\\"100\\">
+        <!---->
+        <div class=\\"v-progress-linear__background\\" style=\\"width: 100%;\\"></div>
+        <div class=\\"v-progress-linear__indeterminate\\">
+          <div class=\\"v-progress-linear__indeterminate long\\"></div>
+          <div class=\\"v-progress-linear__indeterminate short\\"></div>
+        </div>
+        <!---->
+      </div>
+    </div>
+    <!---->
+    <!---->
+    <v-img-stub height=\\"250\\" gradient=\\"to top, rgba(0,0,0,.1), rgba(0,0,0,.5)\\" cover=\\"true\\" eager=\\"false\\" options=\\"[object Object]\\" src=\\"https://s3-media2.fl.yelpcdn.com/bphoto/RDKmsxZZczP4EiTCB9AYOw/o.jpg\\" inline=\\"false\\" transition=\\"fade-transition\\"></v-img-stub>
+    <div class=\\"v-card-text\\">
+      <div class=\\"grid grid-cols-2 gap-4\\">
+        <div class=\\"flex gap-2\\"><i class=\\"mdi-map-marker mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
+          <div class=\\"text-slate-600\\"><pre class=\\"my-0\\">Jungfernstieg 16 - 20
+4. OG
+20354 Hamburg
+Germany</pre>
+          </div>
+        </div>
+        <div class=\\"flex gap-2\\"><i class=\\"mdi-phone mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
+          <div class=\\"text-slate-600\\">
+            <p class=\\"text-body-1\\">+494057283299
+            <div class=\\"v-alert v-theme--light text-warning v-alert--density-default v-alert--variant-tonal\\" role=\\"alert\\">
+              <!----><span class=\\"v-alert__underlay\\"></span>
+              <!---->
+              <div class=\\"v-alert__prepend\\"><i class=\\"mdi-alert-circle mdi v-icon notranslate v-theme--light\\" style=\\"font-size: 28px; height: 28px; width: 28px;\\" aria-hidden=\\"true\\" density=\\"default\\"></i></div>
+              <div class=\\"v-alert__content\\">
+                <!---->
+                <!----> ↑ TODO: we would like to display the formatted phone
+              </div>
+              <!---->
+              <!---->
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <!----><span class=\\"v-card__underlay\\"></span>
+  </div>
+  <aside>
+    <div class=\\"v-alert v-theme--light text-warning v-alert--density-default v-alert--variant-tonal\\" role=\\"alert\\">
+      <!----><span class=\\"v-alert__underlay\\"></span>
+      <!---->
+      <div class=\\"v-alert__prepend\\"><i class=\\"mdi-alert-circle mdi v-icon notranslate v-theme--light\\" style=\\"font-size: 28px; height: 28px; width: 28px;\\" aria-hidden=\\"true\\" density=\\"default\\"></i></div>
+      <div class=\\"v-alert__content\\">
+        <!---->
+        <!----> TODO: this should go under the company card on small device
+      </div>
+      <!---->
+      <!---->
+    </div>
+    <ul class=\\"pa-0\\">
+      <li class=\\"v-card v-theme--light v-card--density-default v-card--variant-elevated va-company-review\\">
+        <!---->
+        <div class=\\"v-card__loader\\">
+          <div class=\\"v-progress-linear v-theme--light v-locale--is-ltr\\" style=\\"top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);\\" role=\\"progressbar\\" aria-hidden=\\"true\\" aria-valuemin=\\"0\\" aria-valuemax=\\"100\\">
+            <!---->
+            <div class=\\"v-progress-linear__background\\" style=\\"width: 100%;\\"></div>
+            <div class=\\"v-progress-linear__indeterminate\\">
+              <div class=\\"v-progress-linear__indeterminate long\\"></div>
+              <div class=\\"v-progress-linear__indeterminate short\\"></div>
+            </div>
+            <!---->
+          </div>
+        </div>
+        <!---->
+        <!---->
+        <div class=\\"v-card-text\\">
+          <div class=\\"v-alert v-theme--light text-warning v-alert--density-default v-alert--variant-tonal\\" role=\\"alert\\">
+            <!----><span class=\\"v-alert__underlay\\"></span>
+            <!---->
+            <div class=\\"v-alert__prepend\\"><i class=\\"mdi-alert-circle mdi v-icon notranslate v-theme--light\\" style=\\"font-size: 28px; height: 28px; width: 28px;\\" aria-hidden=\\"true\\" density=\\"default\\"></i></div>
+            <div class=\\"v-alert__content\\">
+              <!---->
+              <!----> TODO: implement the reviews <br> • Rating using the appropriate Vuetify component <br> • Text (with carriage return)
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <!---->
+        <!----><span class=\\"v-card__underlay\\"></span>
+      </li>
+    </ul>
+  </aside>
+</div>"
+`;
+
 exports[`page-restaurant > handles fetch error 1`] = `
 "<div class=\\"v-alert v-theme--light text-warning v-alert--density-default v-alert--variant-tonal mt-4\\" role=\\"alert\\">
   <!----><span class=\\"v-alert__underlay\\"></span>

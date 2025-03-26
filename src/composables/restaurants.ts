@@ -24,21 +24,22 @@ export interface Review {
   id: string
 }
 
+const restaurantBasePath = `restaurants`;
+
 export function useFetchRestaurants() {
   return useQuery({
     queryKey: [`restaurants-list`],
     queryFn: () => {
-      const url = `restaurants`;
-      return api(url).json<Restaurant[]>();
+      return api(restaurantBasePath).json<Restaurant[]>();
     },
   });
 }
 
 export function useFetchRestaurant({ restaurantId }: { restaurantId: string | string[] }) {
   return useQuery({
-    queryKey: [`company`, restaurantId],
+    queryKey: [`restaurant`, restaurantId],
     queryFn: () => {
-      const url = `restorants/${restaurantId}`;
+      const url = `${restaurantBasePath}/${restaurantId}`;
       return api(url).json<Restaurant>();
     },
   });
