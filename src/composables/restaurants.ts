@@ -44,3 +44,10 @@ export function useFetchRestaurant({ restaurantId }: { restaurantId: string | st
     },
   });
 }
+
+export function useFormattedAddress(location: Location | undefined): string {
+  const returnDefaultMessage = `Address not specified`;
+  if (!location) return returnDefaultMessage;
+  const { formatted_address } = location;
+  return formatted_address ?? returnDefaultMessage;
+}

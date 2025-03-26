@@ -1,7 +1,7 @@
 import { flushPromises, mount } from '@vue/test-utils';
-import { restaurantsApiBasePath } from '~/composables/restaurants';
 
 import PageRestaurant from './[restaurantId].vue';
+import { restaurantsApiBasePath } from '~/composables/restaurants';
 import restaurantsResponse from '@/mock/restaurants.json';
 import * as apiService from '~/services/api';
 

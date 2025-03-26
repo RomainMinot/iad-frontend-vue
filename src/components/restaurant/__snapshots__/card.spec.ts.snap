@@ -31,7 +31,7 @@ exports[`restaurant-card > no props 1`] = `
   </div>
   <div class=\\"v-card-text\\">
     <div class=\\"flex gap-2\\"><i class=\\"mdi-map-marker mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
-      <div class=\\"text-slate-600\\"><pre class=\\"my-0\\"></pre>
+      <div class=\\"text-slate-600\\"><pre class=\\"my-0\\">Address not specified</pre>
       </div>
     </div>
   </div>

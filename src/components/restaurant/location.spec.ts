@@ -21,4 +21,12 @@ describe(`restaurant-card`, () => {
     });
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  it(`renders correctly a location with no address`, (context) => {
+    const wrapper = mount(RestaurantLocation, {
+      global: { plugins: [context.router] },
+      props: { location: undefined },
+    });
+    expect(wrapper.html()).toMatchSnapshot();
+  });
 });

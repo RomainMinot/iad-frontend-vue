@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import { type Location } from '~/composables/restaurants';
+import { type Location, useFormattedAddress } from '~/composables/restaurants';
 
-defineProps<{
+const props = defineProps<{
   location?: Location
 }>();
+
+const formattedAddress = computed(() => useFormattedAddress(props.location));
 </script>
 
 <template>
   <KeyValue icon="mdi-map-marker">
-    <pre class="my-0" v-text="location?.formatted_address" />
+    <pre class="my-0" v-text="formattedAddress" />
   </KeyValue>
 </template>
