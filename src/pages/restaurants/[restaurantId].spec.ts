@@ -1,5 +1,5 @@
 import { flushPromises, mount } from '@vue/test-utils';
-import { restaurantBasePath } from '~/composables/restaurants';
+import { restaurantsApiBasePath } from '~/composables/restaurants';
 
 import PageRestaurant from './[restaurantId].vue';
 import restaurantsResponse from '@/mock/restaurants.json';
@@ -13,7 +13,7 @@ vi.spyOn(apiService, `api`)
 
 describe(`page-restaurant`, () => {
   beforeEach(async (context) => {
-    context.router.push(`/${restaurantBasePath}/${restaurant.id}`);
+    context.router.push(`/${restaurantsApiBasePath}/${restaurant.id}`);
     await context.router.isReady();
   });
 
@@ -23,7 +23,7 @@ describe(`page-restaurant`, () => {
     });
     await flushPromises();
     expect(apiService.api).toHaveBeenCalled();
-    expect(apiService.api).toHaveBeenCalledWith(`${restaurantBasePath}/${restaurant.id}`);
+    expect(apiService.api).toHaveBeenCalledWith(`${restaurantsApiBasePath}/${restaurant.id}`);
     expect(wrapper.html()).toMatchSnapshot();
   });
 

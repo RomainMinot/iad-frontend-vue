@@ -24,13 +24,13 @@ export interface Review {
   id: string
 }
 
-export const restaurantBasePath = `restaurants`;
+export const restaurantsApiBasePath = `restaurants`;
 
 export function useFetchRestaurants() {
   return useQuery({
     queryKey: [`restaurants-list`],
     queryFn: () => {
-      return api(restaurantBasePath).json<Restaurant[]>();
+      return api(restaurantsApiBasePath).json<Restaurant[]>();
     },
   });
 }
@@ -39,7 +39,7 @@ export function useFetchRestaurant({ restaurantId }: { restaurantId: string | st
   return useQuery({
     queryKey: [`restaurant`, restaurantId],
     queryFn: () => {
-      const url = `${restaurantBasePath}/${restaurantId}`;
+      const url = `${restaurantsApiBasePath}/${restaurantId}`;
       return api(url).json<Restaurant>();
     },
   });

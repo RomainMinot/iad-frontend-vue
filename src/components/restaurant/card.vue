@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Restaurant, restaurantBasePath } from '~/composables/restaurants';
+import { type Restaurant, restaurantsApiBasePath } from '~/composables/restaurants';
 
 defineProps<{
   restaurant: Restaurant
@@ -25,7 +25,7 @@ defineProps<{
       <RestaurantLocation :location="restaurant?.location" />
     </VCardText>
     <VCardActions class="mt-auto">
-      <VBtn color="primary" variant="tonal" :to="`/${restaurantBasePath}/${restaurant?.id}`">
+      <VBtn color="primary" variant="tonal" :to="`/${restaurantsApiBasePath}/${restaurant?.id}`">
         see more
       </VBtn>
     </VCardActions>
