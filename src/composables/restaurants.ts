@@ -24,7 +24,7 @@ export interface Review {
   id: string
 }
 
-const restaurantBasePath = `restaurants`;
+export const restaurantBasePath = `restaurants`;
 
 export function useFetchRestaurants() {
   return useQuery({
