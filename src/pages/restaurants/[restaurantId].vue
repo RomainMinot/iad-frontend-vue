@@ -11,7 +11,7 @@ const { data: restaurant, isError } = useFetchRestaurant({ restaurantId: params.
     <br>
     You should fix that
   </VAlert>
-  <div v-else class="grid grid-cols-[minmax(0,_1fr)_16rem] gap-6">
+  <div v-else class="grid grid-cols-1 md:grid-cols-[minmax(0,_1fr)_16rem] gap-6">
     <VCard v-if="restaurant">
       <VImg
         v-for="photo in restaurant.photos"
@@ -38,9 +38,6 @@ const { data: restaurant, isError } = useFetchRestaurant({ restaurantId: params.
       </VCardText>
     </VCard>
     <aside>
-      <VAlert type="warning">
-        TODO: this should go under the company card on small device
-      </VAlert>
       <ul class="pa-0">
         <RestaurantReview />
       </ul>
