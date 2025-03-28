@@ -1,0 +1,77 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`restaurant-average-rating > hide average rating when no reviews 1`] = `"<!--v-if-->"`;
+
+exports[`restaurant-average-rating > no props 1`] = `"<!--v-if-->"`;
+
+exports[`restaurant-average-rating > renders correctly an average rating 1`] = `
+"<div class=\\"v-rating v-rating--readonly v-theme--light mx-4\\"><label for=\\"v-rating-0-0\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 0 of 5</span>
+    <!---->
+  </label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-0\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"0\\">
+  <div class=\\"v-rating__wrapper\\">
+    <!---->
+    <div class=\\"v-rating__item\\"><label for=\\"v-rating-0-0-5\\" class=\\"v-rating__item--half\\"><span class=\\"v-rating__hidden\\">Rating 0.5 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-0-5\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"0.5\\"><label for=\\"v-rating-0-1\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 1 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-1\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"1\\"></div>
+    <!---->
+  </div>
+  <div class=\\"v-rating__wrapper\\">
+    <!---->
+    <div class=\\"v-rating__item\\"><label for=\\"v-rating-0-1-5\\" class=\\"v-rating__item--half\\"><span class=\\"v-rating__hidden\\">Rating 1.5 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-1-5\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"1.5\\"><label for=\\"v-rating-0-2\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 2 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-2\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"2\\"></div>
+    <!---->
+  </div>
+  <div class=\\"v-rating__wrapper\\">
+    <!---->
+    <div class=\\"v-rating__item\\"><label for=\\"v-rating-0-2-5\\" class=\\"v-rating__item--half\\"><span class=\\"v-rating__hidden\\">Rating 2.5 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-2-5\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"2.5\\"><label for=\\"v-rating-0-3\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 3 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-3\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"3\\"></div>
+    <!---->
+  </div>
+  <div class=\\"v-rating__wrapper\\">
+    <!---->
+    <div class=\\"v-rating__item\\"><label for=\\"v-rating-0-3-5\\" class=\\"v-rating__item--half\\"><span class=\\"v-rating__hidden\\">Rating 3.5 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-3-5\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"3.5\\"><label for=\\"v-rating-0-4\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 4 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-4\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"4\\"></div>
+    <!---->
+  </div>
+  <div class=\\"v-rating__wrapper\\">
+    <!---->
+    <div class=\\"v-rating__item\\"><label for=\\"v-rating-0-4-5\\" class=\\"v-rating__item--half\\"><span class=\\"v-rating__hidden\\">Rating 4.5 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star-outline mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-4-5\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"4.5\\"><label for=\\"v-rating-0-5\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 5 of 5</span><button type=\\"button\\" class=\\"v-btn v-btn--icon v-theme--light text-warning v-btn--density-default v-btn--variant-plain\\" style=\\"height: 32px; width: 32px;\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
+          <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"><i class=\\"mdi-star-outline mdi v-icon notranslate v-theme--light v-icon--size-default\\" aria-hidden=\\"true\\"></i></span>
+          <!---->
+          <!---->
+        </button></label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-5\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"5\\"></div>
+    <!---->
+  </div>
+</div>"
+`;

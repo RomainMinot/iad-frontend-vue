@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`key-value > no props 1`] = `
+"<div class=\\"flex gap-2\\"><i class=\\"v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\">
+    <!---->
+  </i>
+  <div class=\\"text-slate-600\\"></div>
+</div>"
+`;
+
+exports[`key-value > renders correctly a key-value 1`] = `
+"<div class=\\"flex gap-2\\"><i class=\\"mdi-map-marker mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
+  <div class=\\"text-slate-600\\"></div>
+</div>"
+`;

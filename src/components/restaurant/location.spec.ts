@@ -1,12 +1,11 @@
 import { mount } from '@vue/test-utils';
 
 import RestaurantLocation from './location.vue';
-import { type Location } from '~/composables/restaurants';
 import restaurantsResponse from '@/mock/restaurants.json';
 
-const location = restaurantsResponse[0].location as Location;
+const { location } = restaurantsResponse[0];
 
-describe(`restaurant-card`, () => {
+describe(`restaurant-location`, () => {
   test(`no props`, (context) => {
     const wrapper = mount(RestaurantLocation, {
       global: { plugins: [context.router] },
