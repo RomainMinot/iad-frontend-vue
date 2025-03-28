@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`restaurant-phone > no props 1`] = `
+"<div class=\\"flex gap-2\\"><i class=\\"mdi-phone mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
+  <div class=\\"text-slate-600\\">
+    <p class=\\"text-body-1\\">Phone number not specified</p>
+  </div>
+</div>"
+`;
+
+exports[`restaurant-phone > renders correctly a phone number 1`] = `
+"<div class=\\"flex gap-2\\"><i class=\\"mdi-phone mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
+  <div class=\\"text-slate-600\\">
+    <p class=\\"text-body-1\\">+49 40 57283299</p>
+  </div>
+</div>"
+`;
+
+exports[`restaurant-phone > renders correctly an empty phone number 1`] = `
+"<div class=\\"flex gap-2\\"><i class=\\"mdi-phone mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
+  <div class=\\"text-slate-600\\">
+    <p class=\\"text-body-1\\">Phone number not specified</p>
+  </div>
+</div>"
+`;

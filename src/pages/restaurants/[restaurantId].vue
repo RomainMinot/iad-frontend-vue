@@ -25,11 +25,7 @@ const { data: restaurant, isError } = useFetchRestaurant({ restaurantId: params.
       <VCardText>
         <div class="grid grid-cols-2 gap-4">
           <RestaurantLocation :location="restaurant.location" />
-          <KeyValue icon="mdi-phone">
-            <p class="text-body-1">
-              {{ restaurant.display_phone }}
-            </p>
-          </KeyValue>
+          <RestaurantPhone :display-phone="restaurant.display_phone" />
         </div>
       </VCardText>
     </VCard>
