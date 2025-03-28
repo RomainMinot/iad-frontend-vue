@@ -6,11 +6,7 @@ const { data: restaurant, isError } = useFetchRestaurant({ restaurantId: params.
 </script>
 
 <template>
-  <VAlert v-if="isError" type="warning" class="mt-4">
-    TODO: It might be an Fetch error
-    <br>
-    You should fix that
-  </VAlert>
+  <LoadingError v-if="isError" />
   <div v-else class="grid grid-cols-1 md:grid-cols-[minmax(0,_1fr)_16rem] gap-6">
     <VCard v-if="restaurant">
       <VImg
