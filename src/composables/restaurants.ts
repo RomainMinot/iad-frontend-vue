@@ -49,7 +49,7 @@ export function useFormattedAddress(location: Location | undefined): string {
   const returnDefaultMessage = `Address not specified`;
   if (!location) return returnDefaultMessage;
   const { formatted_address } = location;
-  return formatted_address ?? returnDefaultMessage;
+  return formatted_address;
 }
 
 export function useAverageRating(reviews: Review[] | undefined): number {

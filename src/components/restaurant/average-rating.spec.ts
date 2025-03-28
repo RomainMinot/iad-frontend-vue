@@ -29,4 +29,3 @@ describe(`restaurant-average-rating`, () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 });
-    
