@@ -2,10 +2,8 @@
 
 exports[`restaurant-average-rating > hide average rating when no reviews 1`] = `"<!--v-if-->"`;
 
-exports[`restaurant-average-rating > no props 1`] = `"<!--v-if-->"`;
-
 exports[`restaurant-average-rating > renders correctly an average rating 1`] = `
-"<div class=\\"v-rating v-rating--readonly v-theme--light mx-4\\"><label for=\\"v-rating-0-0\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 0 of 5</span>
+"<div class=\\"v-rating v-rating--readonly v-theme--light px-4\\"><label for=\\"v-rating-0-0\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 0 of 5</span>
     <!---->
   </label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-0\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"0\\">
   <div class=\\"v-rating__wrapper\\">

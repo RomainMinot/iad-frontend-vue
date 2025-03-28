@@ -3,11 +3,12 @@ import { useFetchRestaurant } from '~/composables/restaurants';
 
 const { params } = useRoute();
 const { data: restaurant, isError } = useFetchRestaurant({ restaurantId: params.restaurantId });
+const hasReviews = computed(() => restaurant.value && restaurant.value?.reviews.length > 0);
 </script>
 
 <template>
   <LoadingError v-if="isError" />
-  <div v-else class="grid grid-cols-1 md:grid-cols-[minmax(0,_1fr)_16rem] gap-6">
+  <div v-else class="grid grid-cols-1 md:grid-cols-[minmax(0,_1fr)_16rem] gap-6 items-start">
     <VCard v-if="restaurant">
       <VImg
         v-for="photo in restaurant.photos"
@@ -30,9 +31,10 @@ const { data: restaurant, isError } = useFetchRestaurant({ restaurantId: params.
       </VCardText>
     </VCard>
     <aside>
-      <ul class="pa-0">
-        <RestaurantReview />
+      <ul v-if="hasReviews" class="pa-0 grid grid-cols-1 gap-3">
+        <RestaurantReview v-for="review in restaurant?.reviews" :key="review.id" :review="review" />
       </ul>
+      <RestaurantReview v-else />
     </aside>
   </div>
 </template>

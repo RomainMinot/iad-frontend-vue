@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`restaurant-card > no props 1`] = `
-"<div class=\\"v-card v-theme--light v-card--density-default v-card--variant-elevated\\">
+exports[`restaurant-review > no props 1`] = `
+"<li data-v-6426699a=\\"\\" class=\\"v-card v-theme--light v-card--density-default v-card--variant-elevated\\">
   <!---->
   <div class=\\"v-card__loader\\">
     <div class=\\"v-progress-linear v-theme--light v-locale--is-ltr\\" style=\\"top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);\\" role=\\"progressbar\\" aria-hidden=\\"true\\" aria-valuemin=\\"0\\" aria-valuemax=\\"100\\">
@@ -16,27 +16,14 @@ exports[`restaurant-card > no props 1`] = `
   </div>
   <!---->
   <!---->
-  <v-img-stub height=\\"100\\" cover=\\"true\\" eager=\\"false\\" options=\\"[object Object]\\" src=\\"\\" inline=\\"false\\" transition=\\"fade-transition\\"></v-img-stub>
-  <div class=\\"v-card-title\\"></div>
-  <!--v-if-->
-  <div class=\\"v-card-text\\">
-    <div class=\\"flex gap-2\\"><i class=\\"mdi-map-marker mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
-      <div class=\\"text-slate-600\\"><pre class=\\"my-0\\">Address not specified</pre>
-      </div>
-    </div>
-  </div>
-  <div class=\\"v-card-actions mt-auto\\"><a class=\\"v-btn v-theme--light text-primary v-btn--density-default v-btn--size-default v-btn--variant-tonal\\" href=\\"/restaurants/undefined\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
-      <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"> see more </span>
-      <!---->
-      <!---->
-    </a></div>
+  <p data-v-6426699a=\\"\\" class=\\"v-card-text\\"> No reviews yet for this restaurant </p>
   <!---->
   <!----><span class=\\"v-card__underlay\\"></span>
-</div>"
+</li>"
 `;
 
-exports[`restaurant-card > renders correctly a restaurant 1`] = `
-"<div class=\\"v-card v-theme--light v-card--density-default v-card--variant-elevated\\">
+exports[`restaurant-review > renders correctly a review 1`] = `
+"<li data-v-6426699a=\\"\\" class=\\"v-card v-theme--light v-card--density-default v-card--variant-elevated va-company-review\\">
   <!---->
   <div class=\\"v-card__loader\\">
     <div class=\\"v-progress-linear v-theme--light v-locale--is-ltr\\" style=\\"top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);\\" role=\\"progressbar\\" aria-hidden=\\"true\\" aria-valuemin=\\"0\\" aria-valuemax=\\"100\\">
@@ -51,9 +38,7 @@ exports[`restaurant-card > renders correctly a restaurant 1`] = `
   </div>
   <!---->
   <!---->
-  <v-img-stub height=\\"100\\" cover=\\"true\\" eager=\\"false\\" options=\\"[object Object]\\" src=\\"https://s3-media2.fl.yelpcdn.com/bphoto/RDKmsxZZczP4EiTCB9AYOw/o.jpg\\" inline=\\"false\\" transition=\\"fade-transition\\"></v-img-stub>
-  <div class=\\"v-card-title\\">Billy The Butcher</div>
-  <div class=\\"v-rating v-rating--readonly v-theme--light px-4\\"><label for=\\"v-rating-0-0\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 0 of 5</span>
+  <div data-v-6426699a=\\"\\" class=\\"v-rating v-rating--readonly v-theme--light px-4\\"><label for=\\"v-rating-0-0\\" class=\\"v-rating__item--full\\"><span class=\\"v-rating__hidden\\">Rating 0 of 5</span>
       <!---->
     </label><input class=\\"v-rating__hidden\\" name=\\"v-rating-0\\" id=\\"v-rating-0-0\\" type=\\"radio\\" tabindex=\\"-1\\" readonly=\\"\\" value=\\"0\\">
     <div class=\\"v-rating__wrapper\\">
@@ -122,21 +107,8 @@ exports[`restaurant-card > renders correctly a restaurant 1`] = `
       <!---->
     </div>
   </div>
-  <div class=\\"v-card-text\\">
-    <div class=\\"flex gap-2\\"><i class=\\"mdi-map-marker mdi v-icon notranslate v-theme--light v-icon--size-default text-slate-300\\" aria-hidden=\\"true\\"></i>
-      <div class=\\"text-slate-600\\"><pre class=\\"my-0\\">Jungfernstieg 16 - 20
-4. OG
-20354 Hamburg
-Germany</pre>
-      </div>
-    </div>
-  </div>
-  <div class=\\"v-card-actions mt-auto\\"><a class=\\"v-btn v-theme--light text-primary v-btn--density-default v-btn--size-default v-btn--variant-tonal\\" href=\\"/restaurants/7974729\\"><span class=\\"v-btn__overlay\\"></span><span class=\\"v-btn__underlay\\"></span>
-      <!----><span class=\\"v-btn__content\\" data-no-activator=\\"\\"> see more </span>
-      <!---->
-      <!---->
-    </a></div>
+  <p data-v-6426699a=\\"\\" class=\\"v-card-text\\">I've had decent lunches at Billy The Butcher a couple of times now. It's what I would describe as a trendy burger joint on the 4th floor of the Alsterhaus...</p>
   <!---->
   <!----><span class=\\"v-card__underlay\\"></span>
-</div>"
+</li>"
 `;

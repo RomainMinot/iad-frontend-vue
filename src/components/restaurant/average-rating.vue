@@ -19,6 +19,6 @@ const averageRating = computed(() => useAverageRating(props.reviews));
     half-increments
     color="warning"
     active-color="warning"
-    class="mx-4"
+    class="px-4"
   />
 </template>
