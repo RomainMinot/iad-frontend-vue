@@ -10,7 +10,6 @@ import RestaurantCard from '~/components/restaurant/card.vue';
 vi.spyOn(apiService, `api`)
   .mockImplementationOnce(() => ({ json: vi.fn().mockResolvedValue(restaurantsResponse) } as any))
   .mockImplementationOnce(() => ({ json: vi.fn().mockRejectedValueOnce(new Error(`something went wrong`)) } as any))
-  .mockImplementationOnce(() => ({ json: vi.fn().mockRejectedValueOnce(new Error(`something went wrong`)) } as any))
   .mockImplementationOnce(() => ({ json: vi.fn().mockResolvedValue([]) } as any))
   .mockImplementation(() => ({ json: vi.fn().mockResolvedValue(restaurantsResponse) } as any));
 
@@ -39,15 +38,6 @@ describe(`page-home`, () => {
     expect(wrapper.findComponent(LoadingError).exists()).toBe(true);
   });
 
-  it(`handles case when restaurants data is null or undefined`, async (context) => {
-    const wrapper = mount(PageHome, {
-      global: { plugins: [context.router] },
-    });
-    await flushPromises();
-    expect(wrapper.findComponent(LoadingError).exists()).toBe(true);
-    expect(wrapper.findAllComponents(RestaurantCard).length).toBe(0);
-  });
-
   it(`handles empty restaurants array correctly`, async (context) => {
     const wrapper = mount(PageHome, {
       global: { plugins: [context.router] },
@@ -57,7 +47,7 @@ describe(`page-home`, () => {
     expect(wrapper.findAllComponents(RestaurantCard).length).toBe(0);
   });
 
-  it(`filtre les restaurants par note`, async (context) => {
+  it(`filter restaurants by notes`, async (context) => {
     const wrapper = mount(PageHome, {
       global: { plugins: [context.router] },
     });

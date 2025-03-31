@@ -5,8 +5,7 @@ const { data: restaurants, isError } = useFetchRestaurants();
 
 const ratingFilter = ref(0);
 const filteredRestaurants = computed(() => {
-  if (!restaurants.value) return [];
-  return restaurants.value.filter(restaurant => ratingFilter.value === 0 || useAverageRating(restaurant.reviews) >= ratingFilter.value);
+  return restaurants.value?.filter(restaurant => ratingFilter.value === 0 || useAverageRating(restaurant.reviews) >= ratingFilter.value);
 });
 
 function updateRatingFilter(newFiltervalue: number) {
